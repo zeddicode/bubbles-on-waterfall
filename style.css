@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('asset/godafoss-1840758_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    
+    color: black;
+    padding: 1rem;
+    font-size: large;
+    background-color: rgba(235, 223, 223, 0.459);
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4rem;
+}
+.home{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-right: 4rem;
+}
+li{
+    list-style: none;
+}
+.ourland{
+    font-size: 2rem;
+}
+span{
+    color: blueviolet;
+}
+.land{
+    height: 30vh;
+    width: 500px;
+    padding: 20px;
+    position: relative;
+    left: 35%;
+    text-decoration: solid;
+    background-color: rgba(187, 171, 204, 0.171);
+    box-shadow: 2px 1px 5px whitesmoke;
+    margin-top: 20%;
+}
+h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.bubble{
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+    color: rgb(241, 248, 248);
+    position: absolute;
+    background-color: #b1da1c;
+    border-radius: 50%;
+    animation: animate 7s linear infinite;
+}
+.bubble:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 10%;
+    bottom: -10%;
+    animation-delay: 0s;
+}
+.bubble:nth-child(2){
+    width: 40px;
+    height: 40px;
+    left: 20%;
+    bottom: -20%;
+    animation-delay: 1s;
+
+}
+.bubble:nth-child(3){
+    width: 60px;
+    height: 60px;
+    left: 30%;
+    bottom: -30%;
+    animation-delay: 2s;
+}
+.bubble:nth-child(4){
+    width: 100px;
+    height: 100px;
+    left: 40%;
+    bottom: -40%;
+    animation-delay: 3s;
+}
+
+@keyframes animate{
+    0%{
+        top: 100%;
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        ;
+
+    }
+    100%{
+        top: -50%;
+        transform: scale(1);
+        opacity: 0;
+    }
+}
